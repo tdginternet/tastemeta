@@ -20,7 +20,8 @@ end
 
 post '/' do
   url   = params['url']
-  page  = Nokogiri::HTML(open(url))
+
+  page  = Nokogiri::HTML(open(url, {"User-Agent" => request.user_agent}))
   metas = page.css("meta[property^=og]")
 
   metas = metas.map do |meta|
