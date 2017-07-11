@@ -3,7 +3,9 @@
 <head>
 <% @metas.each do |meta| %>
 <% meta.each do |key, value| %>
-	<meta content="<%=value%>" property="<%=key%>" />
+  <% unless key == 'og:url' %>
+  <meta content="<%=value%>" property="<%=key%>" />
+  <% end %>
 <% end %>
 <% end %>
 </head>
