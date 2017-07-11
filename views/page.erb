@@ -1,0 +1,2391 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://seguro.tudogostoso.com.br/assets/desktop/mobile_detector.js?v03052017"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<title>Tudogostoso - Onde nascem as suas receitas!</title>
+<LINK HREF="/favicon-v2.1.ico" REL="SHORTCUT ICON" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"b26d34575a","applicationID":"16891756","transactionName":"cw1fREEJW1VRRksJDl0HHlldAlJB","queueTime":0,"applicationTime":175,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<META CONTENT="NO-CACHE" HTTP-EQUIV="PRAGMA" />
+<META CONTENT="NO-CACHE" HTTP-EQUIV="CACHE-CONTROL" />
+<META CONTENT="0" HTTP-EQUIV="EXPIRES" />
+<META CONTENT="DOCUMENT" NAME="RESOURCE-TYPE" />
+<META CONTENT="GLOBAL" NAME="DISTRIBUTION" />
+<META CONTENT="Tudogostoso" NAME="AUTHOR" />
+<META CONTENT="Copyright (c) 2003 - 2017 by Tudogostoso" NAME="COPYRIGHT" />
+<META CONTENT="tudogostoso receitas, tudo gostoso, receitas, receita, culinária, cozinha, receitas light, receitas de microondas" NAME="KEYWORDS" />
+<META CONTENT="1 DAYS" NAME="REVISIT-AFTER" />
+<META CONTENT="GENERAL" NAME="RATING" />
+<META CONTENT="pt-br" NAME="LANGUAGE" />
+<META NAME="DESCRIPTION" content="Tudogostoso Receitas - As melhores receitas você só encontra aqui." />
+<LINK href="http://www.tudogostoso.com.br" rel="canonical" />
+<META CONTENT="INDEX, FOLLOW" NAME="ROBOTS" />
+<meta content="Tudogostoso - Onde nascem as suas receitas!" property="og:title" />
+<meta content="Tudogostoso Receitas - As melhores receitas você só encontra aqui." property="og:description" />
+<meta content="http://img.itdg.com.br/tdg/assets/renew/layout/footer-bg.jpg" property="og:image" />
+<meta content="food" property="og:type" />
+<meta content="Tudogostoso" property="og:site_name" />
+<meta content="http://www.tudogostoso.com.br" property="og:url" />
+<meta content="272027629503796" property="fb:app_id" />
+<meta content="BR" name="twitter:app:country" />
+<meta content="Tudo Gostoso" name="twitter:app:name:iphone" />
+<meta content="Tudo Gostoso" name="twitter:app:name:ipad" />
+<meta content="Tudo Gostoso" name="twitter:app:name:googleplay" />
+<meta content="577891381" name="twitter:app:id:iphone" />
+<meta content="577891381" name="twitter:app:id:ipad" />
+<meta content="tudogostoso://home" name="twitter:app:url:iphone" />
+<meta content="tudogostoso://home" name="twitter:app:url:ipad" />
+<meta content="com.nzn.tdg" name="twitter:app:id:googleplay" />
+<meta content="http://www.tudogostoso.com.br" name="twitter:app:url:googleplay" />
+<meta content="summary_large_image" name="twitter:card" />
+<meta content="@Tudo_Gostoso" name="twitter:site" />
+<meta content="@Tudo_Gostoso" name="twitter:creator" />
+<meta content="Tudogostoso Receitas - Fazendo o seu dia mais gostoso" name="twitter:description" />
+<meta content="Tudogostoso" name="twitter:title" />
+<meta content="http://img.itdg.com.br/tdg/assets/layout/logos/logo-v3.png" name="twitter:image" />
+<meta content="http://www.tudogostoso.com.br" name="twitter:url" />
+<link href="android-app://com.nzn.tdg/http/www.tudogostoso.com.br/" rel="alternate" />
+<link href="ios-app://577891381/tudogostoso/home" rel="alternate" />
+<meta content="tudogostoso://home" property="al:ios:url" />
+<meta content="577891381" property="al:ios:app_store_id" />
+<meta content="com.nzn.tdg" property="al:android:package" />
+<meta content="http://www.tudogostoso.com.br/" property="al:android:url" />
+<meta content="tudogostoso://home" property="al:windows_phone:url" />
+<meta content="9a392826-0c0c-4842-bb31-4e85b6672922" property="al:windows_phone:app_id" />
+<meta content="http://www.tudogostoso.com.br/" property="al:web:url" />
+<meta content="Tudo Gostoso" property="al:ios:app_name" />
+<meta content="Tudo Gostoso" property="al:android:app_name" />
+
+<link href="https://seguro.tudogostoso.com.br/assets/desktop/application-fc24b2db568307e90f526b1a9bbd113a.css" media="all" rel="stylesheet" type="text/css" />
+<!--[if lt IE 8]>
+<link href="https://seguro.tudogostoso.com.br/assets/desktop/ie-875f0d42a52ff5536404da8fda8d423b.css" media="all" rel="stylesheet" type="text/css" />
+<![endif]-->
+<script type="text/javascript">
+  //<![CDATA[
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','gatdg');
+    ga = gatdg
+    
+    gatdg('create', 'UA-54622095-1', 'auto');
+    gatdg('send', 'pageview');
+  //]]>
+</script>
+
+<script type="text/javascript">
+  //<![CDATA[
+    
+  //]]>
+</script>
+<script async="async" src="http://ced.sascdn.com/tag/924/smart.js" type="text/javascript"></script>
+<script async="async" src="https://seguro.tudogostoso.com.br/assets/prebid-v0.21.0-05d7d148efc9f4b20d999e717f6eb1b7.js" type="text/javascript"></script>
+<script type="text/javascript">
+  //<![CDATA[
+    // DataScience
+    var cb = new Date().getTime();
+    var asiPqTag = false;
+    try {
+      document.write("<sc" + "ript type='text/javascript' language='JavaScript' src='//pq-direct.revsci.net/pql?placementIdList=ThCeO8,Vj8tat&cb=" + cb + "'></sc" + "ript>");
+    } catch(err) { }
+    // DataScience
+  //]]>
+</script>
+<script type="text/javascript">
+  //<![CDATA[
+    // DataScience
+    if (typeof asiPlacements != "undefined") {
+      window.asiArrayKeys =[];
+      for(var p in asiPlacements) {
+        window["ASPQ_"+p]="";
+        for(var key in asiPlacements[p].data) {
+          window["ASPQ_"+p] += "PQ_"+p+"="+key;
+          window.asiArrayKeys.push("ASPQ_"+p+"="+key)
+        }
+      }
+    }
+    // DataScience
+  //]]>
+</script>
+<script type="text/javascript">
+  //<![CDATA[
+    // Smart
+    var sas = sas || {};
+    sas.cmd = sas.cmd || [];
+    
+    sas.cmd.push(function() {
+      sas.setup({ networkid: 924, domain: "http://www5.smartadserver.com", async: true });
+    });
+  //]]>
+</script>
+<!-- Inicio da tag TT de segmencatao -->
+<script id="tailtarget">
+// <![CDATA[
+var _ttprofiles = _ttprofiles || [];
+_ttprofiles.push(['_setAccount', 'TT-10531-7']);
+_ttprofiles.profiles = [];
+_ttprofiles.push(['_enableServices']);
+document.write("<scr" + "ipt src='" + ("https:" == document.location.protocol ? "https:" : "http:") + "//d.tailtarget.com/profiles.js'></scr" + "ipt>");
+// ]]>
+</script>
+<!-- Final da tag TT de segmentacao -->
+<script type="text/javascript">
+  //<![CDATA[
+    // DataScience - Tail Target
+    function sasAddData(data, m, o) {
+      if (m instanceof Array) {
+        for (var k = 0; k < m.length; k++) {
+          if (!isNaN(m[k]) && Number(m[k]) !== 0) {
+            data.push(o + "=" + m[k])
+          }
+          if(m[k] && m[k].indexOf("CA") == 0){
+            data.push(o + "=" + m[k])
+          }
+        }
+      } else if (!isNaN(m)) {
+        data.push(o + "=" + m);
+      }
+    }
+    
+    function sasGetTT() {
+      if (typeof(_ttprofiles) === "undefined") {
+        return "";
+      }
+      var g = _ttprofiles, data = [];
+      var d = Number(g.getAge), b = Number(g.getGender), c = g.getProfiles, a = g.getSubjects, u = g.getMicrosegments, j = Number(g.getEquipment), e = g.getCustomAudience, s = g.getSocialClass;
+      if (!isNaN(d) && d !== 0) {
+        data.push("tga=" + d);
+      }
+      if (!isNaN(b) && b !== 0) {
+        data.push("tgg=" + b);
+      }
+      sasAddData(data, c, "tgp");
+      sasAddData(data, a, "tgs");
+      sasAddData(data, u, "tgu");
+      sasAddData(data, j, "tge");
+      sasAddData(data, e, "tgca");
+      sasAddData(data, s, "tgc");
+      return data.join(";");
+    }
+    
+    var profileTailTarget = {
+      age: _ttprofiles.getAge,
+      gender: _ttprofiles.getGender,
+      cluster: _ttprofiles.getProfiles.join(','),
+      subjects: _ttprofiles.getSubjects.join(','),
+      team: _ttprofiles.getTeam,
+      equipment: _ttprofiles.getEquipment,
+      socialclass: _ttprofiles.getSocialClass,
+      microsegments: _ttprofiles.getMicrosegments.join(','),
+      lists: _ttprofiles.getLists.join(','),
+      ca: _ttprofiles.getCustomAudience.join(',')
+    };
+    // DataScience
+  //]]>
+</script>
+<script type="text/javascript">
+  //<![CDATA[
+    //Header Bidding
+    var pbjs = pbjs || {};
+    pbjs.que = pbjs.que || [];
+    
+    pbjs.que.push(function() {
+      pbjs.bidderSettings = {
+        standard: {
+          adserverTargeting: [{
+            key: "bidder",
+            val: function(bidResponse) {
+              return bidResponse.bidderCode;
+            }
+          }, {
+            key: "adid",
+            val: function(bidResponse) {
+              return bidResponse.adId;
+            }
+          }, {
+            key: "size",
+            val: function(bidResponse) {
+              return bidResponse.size;
+            }
+          }, {
+            key: "bid_price",
+            val: function(bidResponse) {
+              var cpm = bidResponse.cpm;
+              if (cpm < 1.00) {
+                return (Math.floor(cpm * 20) / 20).toFixed(2);
+              } else if (cpm < 5.00) {
+                return (Math.floor(cpm * 10) / 10).toFixed(2);
+              } else if (cpm < 10.00) {
+                return (Math.floor(cpm * 5) / 5).toFixed(2);
+              } else if (cpm < 20.00) {
+                return (Math.floor(cpm * 2) / 2).toFixed(2);
+              } else if (cpm < 50.00) {
+                return (Math.floor(cpm * 1) / 1).toFixed(2);
+              } else if (cpm < 100.00) {
+                return (Math.floor(cpm * 0.2) / 0.2).toFixed(2);
+              } else if (cpm < 300.00) {
+                return (Math.floor(cpm * 0.04) / 0.04).toFixed(2);
+              } else {
+                return '300.00';
+              }
+            }
+          }]
+        }
+      };
+    });
+  //]]>
+</script>
+<script type="text/javascript">
+  //<![CDATA[
+    
+    
+    var domain = null,
+        referrSelf = false,
+        referrer = document.referrer;
+    
+    if(referrer) {
+      domain = referrer.match(/:\/\/(.[^/]+)/)[1]
+      if(domain == "www.tudogostoso.com.br") {
+        referrSelf = true;
+      }
+    }
+    
+    function getParamValue(param) {
+      var urlParamString = location.search.split(param + "=");
+      if (urlParamString.length <= 1) return "";
+      else {
+        var tmp = urlParamString[1].split("&");
+        return tmp[0];
+      }
+    }
+    
+    var adServerTarget  = "content_id=home;";
+    // Targeting - PQ_ThCeO8=XXAU-li270 is the audience science id
+    window.naveggTarget = adServerTarget.replace(/[^a-z0-9=;_\.\-]/gi, "") + "PQ_ThCeO8=XXAU-li270;PQ_Vj8tat=XXAU-li269;";
+  //]]>
+</script>
+
+<script id="navegg" src="https://tag.navdmp.com/tm22518.js" type="text/javascript"></script>
+<script type="text/javascript">
+  //<![CDATA[
+    var target = "" + sasGetTT() + ";ad=" + getParamValue("ad") + ";referer=" + referrer +  ";refererself=" + referrSelf +";" + naveggTarget;
+    nvg22518.makeNvgSmart();
+  //]]>
+</script>
+
+<script type="text/javascript">
+  //<![CDATA[
+    window._taboola = window._taboola || [];
+    _taboola.push({home:'auto'});
+    !function (e, f, u, i) {
+    if (!document.getElementById(i)){
+    e.async = 1;
+    e.src = u;
+    e.id = i;
+    f.parentNode.insertBefore(e, f);
+    }
+    }(document.createElement('script'),
+    document.getElementsByTagName('script')[0],
+    '//cdn.taboola.com/libtrc/tudogostoso/loader.js',
+    'tb_loader_script');
+    if(window.performance && typeof window.performance.mark ==
+    'function')
+    {window.performance.mark('tbl_ic');}
+  //]]>
+</script>
+
+<script type="text/javascript">
+  //<![CDATA[
+    window.ENV = {
+      "SITE_DOMAIN": "tudogostoso.com.br"
+    }
+  //]]>
+</script>
+
+
+
+</head>
+<body>
+<noscript>
+<iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-PLX94J" style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
+<script type="text/javascript">
+  //<![CDATA[
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PLX94J');
+  //]]>
+</script>
+<!-- :javascript -->
+<!-- sas.render("#{id}"); -->
+<div data-mad-auto-refresh-in-seconds="" data-mad-auto-refresh-limit="999" data-mad-lazyload-offset="" data-mad-smartad-id="23428" data-mad="" id="sas_23428"></div>
+
+<header id="header">
+<div class="ads-box ads728-top">
+<!-- :javascript -->
+<!-- sas.render("#{id}"); -->
+<div data-mad-auto-refresh-in-seconds="20" data-mad-auto-refresh-limit="999" data-mad-lazyload-offset="" data-mad-smartad-id="20009" data-mad="" id="sas_20009"></div>
+
+</div>
+<div class="fixed-top fixed-top-ads">
+<div class="head">
+<div class="box">
+<h1 class="logo">
+<span class="h1-text">Tudogostoso - Onde nascem as suas receitas!</span>
+<a href="/"><img alt="Tudogostoso - Onde nascem as suas receitas!" src="http://img.itdg.com.br/tdg/assets/layout/logos/logo-v4.png" />
+</a></h1>
+<a class="blog-btn" href="http://blog.tudogostoso.com.br">
+<img alt="Blog Tudogostoso" class="ico blog" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+<div class="txt">
+Blog
+</div>
+</a>
+<div class="search">
+<form action="/busca.php" id="search" method="get">
+<input class="txt" name="q" placeholder="Encontre uma receita..." type="text" />
+<input class="ico search" type="submit" value="Buscar" />
+</form>
+</div>
+<div class="buttons">
+<div class="send-recipe">
+<a class="submit-recipe" data-open-on="center">
+<img alt="Enviar sua receita" class="ico send" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+<div class="txt">Enviar sua receita</div>
+</a>
+</div>
+<div class="user">
+<ul class="user-btns" id="unlogged-menu">
+<li class="signup">
+<a class="signin" data-open-on="right" href="https://seguro.tudogostoso.com.br/cadastro" id="signup_link">
+<img alt="Cadastre-se" class="ico signin" src="http://tdg.itdg.com.br/images/layout/blank.gif" />
+<div class="txt">Cadastre-se</div>
+</a>
+</li>
+<li class="login">
+<a class="login" data-open-on="right" href="https://seguro.tudogostoso.com.br/login" id="login-trigger">
+<img alt="Entrar" class="ico login" src="http://tdg.itdg.com.br/images/layout/blank.gif" />
+<div class="txt">Entrar</div>
+</a>
+</li>
+</ul>
+<ul class="logged-box user-btns" id="logged-menu" style="display:none!important;">
+<li>
+<a class="favorite" data-open-on="center" href="/meu-livro/">
+<img alt="Receitas favoritas" class="ico heart-small-white" src="http://tdg.itdg.com.br/images/layout/blank.gif" />
+<div class="txt">Receitas favoritas</div>
+</a>
+</li>
+<li>
+<a class="name" data-open-on="right" href="javascript:void(0)" id="logged-user">
+<img alt="Foto do usuário" class="user-avatar" src="http://tdg.itdg.com.br/assets/default/users_avatars/user_avatar_original.png" />
+<span id="header_user_name"></span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="menu fixed-hide">
+<nav>
+<ul class="clearfix">
+<li>
+<a href="/categorias/bolos-e-tortas-doces.php" title="Bolos e Tortas">Bolos e <br> Tortas</a>
+</li>
+<li>
+<a href="/categorias/carnes.php" title="Carnes">Carnes</a>
+</li>
+<li>
+<a href="/categorias/aves.php" title="Aves">Aves</a>
+</li>
+<li>
+<a href="/categorias/peixes-e-frutos-do-mar.php" title="Peixes e Frutos do Mar">Peixes e Frutos <br>do Mar</a>
+</li>
+<li>
+<a href="/categorias/saladas-molhos-e-acompanhamentos.php" title="Saladas e Molhos">Saladas e <br>Molhos</a>
+</li>
+<li>
+<a href="/categorias/sopas.php" title="Sopas">Sopas</a>
+</li>
+<li>
+<a href="/categorias/massas.php" title="Massas">Massas</a>
+</li>
+<li>
+<a href="/categorias/bebidas.php" title="Bebidas">Bebidas</a>
+</li>
+<li>
+<a href="/categorias/doces-e-sobremesas.php" title="Doces e Sobremesas">Doces e <br>Sobremesas</a>
+</li>
+<li>
+<a href="/categorias/lanches.php" title="Lanches">Lanches</a>
+</li>
+<li>
+<a class="healthy" href="/categorias/alimentacao-saudavel.php" title="Alimentação Saudável">Alimentação Saudável</a>
+</li>
+<li>
+<a href="/videos.php" title="Vídeos">Vídeos</a>
+</li>
+<li>
+<a href="/especiais/15-chefs-tudo-gostoso" title="Chefs Tudogostoso">Chefs <br>Tudogostoso</a>
+</li>
+<li>
+<a href="/concursos" title="Concursos">
+<span class="special">Concursos</span>
+</a>
+</li>
+<span class="overlay-white"></span>
+<span class="overlay"></span>
+</ul>
+</nav>
+
+</div>
+</div>
+<script type="text/javascript">
+  //<![CDATA[
+    function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for(var i=0; i<ca.length; i++)  {
+        var c = ca[i].trim();
+        if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+      }
+      return "";
+    }
+    name = decodeURIComponent(decodeURIComponent(getCookie('tg_nome')));
+    if(name) {
+      document.getElementById('header_user_name').innerHTML  = name;
+      document.getElementById('unlogged-menu').style.display = 'none';
+      document.getElementById('logged-menu').style.display   = 'flex';
+    }
+  //]]>
+</script>
+<div class="featured">
+<ul class="clearfix">
+<li>
+<a href="/especiais/23-canal-especial-pullman" class="special-menu-item" rel="23-canal-especial-pullman">Canal especial de Pão
+</a><img alt="Canal especial de Pão" src="http://img.itdg.com.br/ns/tudogostoso/2017/05/10/10183202378002.png?mode=crop&amp;width=65" />
+</li>
+
+
+</ul>
+</div>
+</header>
+<div id="masthead"></div>
+
+<div class="content">
+<div class="content-inner">
+<!-- :javascript -->
+<!-- sas.render("#{id}"); -->
+<div data-mad-auto-refresh-in-seconds="20" data-mad-auto-refresh-limit="999" data-mad-lazyload-offset="100" data-mad-smartad-id="46253" data-mad="" id="sas_46253"></div>
+
+<!-- :javascript -->
+<!-- sas.render("#{id}"); -->
+<div data-mad-auto-refresh-in-seconds="20" data-mad-auto-refresh-limit="999" data-mad-lazyload-offset="100" data-mad-smartad-id="46254" data-mad="" id="sas_46254"></div>
+
+<div class="home">
+<div class="highlights">
+<div class="main-content">
+<div class="layout2" id="layouts">
+<div class="box box-hover box-wide video" title="Youtube Video">
+<div id="player"></div>
+
+</div>
+
+<div class="box box-hover box-small recipe" title="Pizza de pão de forma">
+<!-- :javascript -->
+<!-- sas.render("#{id}"); -->
+<div data-mad-auto-refresh-in-seconds="20" data-mad-auto-refresh-limit="999" data-mad-lazyload-offset="100" data-mad-smartad-id="42416" data-mad="" id="sas_42416"></div>
+
+<a href="/receita/302-pizza-de-pao-de-forma.html"><img alt="Pizza de pão de forma" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/000/302/277343/277343_original.jpg?mode=crop&amp;width=160&amp;height=185" />
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Massas
+</span>
+</h4>
+<h3>
+Pizza de pão de forma
+</h3>
+<span class="by-user">
+Por
+<span>
+Denice Vacari
+</span>
+</span>
+<span class="like">
+<img alt="Blank" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+40.261
+</span>
+</div>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+40 MIN
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+6 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</a>
+</div>
+<div class="article box box-hover box-small" title="Aprenda a fazer pizza artesanal no forno da sua casa">
+<!-- :javascript -->
+<!-- sas.render("#{id}"); -->
+<div data-mad-auto-refresh-in-seconds="20" data-mad-auto-refresh-limit="999" data-mad-lazyload-offset="100" data-mad-smartad-id="44766" data-mad="" id="sas_44766"></div>
+
+<a href="http://blog.tudogostoso.com.br/cardapios/aprenda-fazer-pizza-artesanal-no-forno-da-sua-casa/"><img alt="Aprenda a fazer pizza artesanal no forno da sua casa" class="recipe-img" src="http://img.itdg.com.br/tdg/images/blog/uploads/2017/03/IMG_0021.jpg?mode=crop&amp;width=160&amp;height=185" />
+<div class="article-box">
+<div class="container">
+<span class="created_at">
+16/03/17
+</span>
+<h2 class="title">
+Aprenda a fazer pizza artesanal no forno da sua casa
+</h2>
+</div>
+</div>
+</a>
+</div>
+
+
+</div>
+</div>
+</div>
+<h2 class="more-highlights-title section-title">
+Mais Destaques
+</h2>
+<div class="more-highlights">
+<div class="main-content">
+<div class="left-content">
+<div class="box box-hover">
+<a href="/receita/823-amendoim-doce.html"><img alt="Amendoim doce" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/000/823/14323/14323_original.jpg?mode=crop&amp;width=330&amp;height=210" />
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Doces e sobremesas
+</span>
+</h4>
+<h3>
+Amendoim doce
+</h3>
+<span class="by-user">
+<span class="by">
+Por
+</span>
+<span>
+Leandro Coelho
+</span>
+</span>
+<span class="like">
+<img alt="Blank" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+5.710
+</span>
+</div>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+30 MIN
+min
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+0 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</a></div>
+<div class="box box-hover">
+<a href="/receita/50-bolo-de-banana.html"><img alt="Bolo de banana" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/000/050/38656/38656_original.jpg?mode=crop&amp;width=330&amp;height=210" />
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Bolos e tortas doces
+</span>
+</h4>
+<h3>
+Bolo de banana
+</h3>
+<span class="by-user">
+<span class="by">
+Por
+</span>
+<span>
+Tudo Gostoso
+</span>
+</span>
+<span class="like">
+<img alt="Blank" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+39.924
+</span>
+</div>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+70 MIN
+min
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+8 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</a></div>
+
+<div class="box box-hover box-small">
+<a href="/receita/431-nhoque-facil.html"><img alt="Nhoque fácil" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/000/431/143/143_original.jpg?mode=crop&amp;width=150&amp;height=150" />
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Massas
+</span>
+</h4>
+<h3>
+Nhoque fácil
+</h3>
+<span class="by-user">
+<span class="by">
+Por
+</span>
+<span>
+Patricia Cutrin
+</span>
+</span>
+<span class="like">
+<img alt="Blank" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+63.617
+</span>
+</div>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+60 MIN
+min
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+6 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</a></div>
+<div class="box box-hover box-small">
+<a href="/receita/71030-caldinho-de-mandioca.html"><img alt="Caldinho de mandioca" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/071/030/15285/15285_original.jpg?mode=crop&amp;width=150&amp;height=150" />
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Sopas
+</span>
+</h4>
+<h3>
+Caldinho de mandioca
+</h3>
+<span class="by-user">
+<span class="by">
+Por
+</span>
+<span>
+Jéssica Oliveira
+</span>
+</span>
+<span class="like">
+<img alt="Blank" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+46.010
+</span>
+</div>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+60 MIN
+min
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+10 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</a></div>
+<div class="box box-hover box-small">
+<a href="/receita/33963-tilapia-no-forno.html"><img alt="Tilápia no forno" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/033/963/239606/239606_original.jpg?mode=crop&amp;width=150&amp;height=150" />
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Peixes e frutos do mar
+</span>
+</h4>
+<h3>
+Tilápia no forno
+</h3>
+<span class="by-user">
+<span class="by">
+Por
+</span>
+<span>
+Matheus Delázari M...
+</span>
+</span>
+<span class="like">
+<img alt="Blank" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+5.478
+</span>
+</div>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+30 MIN
+min
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+2 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</a></div>
+<div class="box box-hover box-small">
+<a href="/receita/11441-risoto-de-frango.html"><img alt="Risoto de frango" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/011/441/118326/118326_original.jpg?mode=crop&amp;width=150&amp;height=150" />
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Prato Único
+</span>
+</h4>
+<h3>
+Risoto de frango
+</h3>
+<span class="by-user">
+<span class="by">
+Por
+</span>
+<span>
+alessandra da silv...
+</span>
+</span>
+<span class="like">
+<img alt="Blank" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+8.272
+</span>
+</div>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+40 MIN
+min
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+10 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</a></div>
+
+</div>
+<div class="right-content">
+<div class="ads-box ads300x250">
+<!-- :javascript -->
+<!-- sas.render("#{id}"); -->
+<div data-mad-auto-refresh-in-seconds="20" data-mad-auto-refresh-limit="999" data-mad-lazyload-offset="" data-mad-smartad-id="20055" data-mad="" id="sas_20055"></div>
+
+</div>
+<div class="ads-box ads300x250">
+<!-- :javascript -->
+<!-- sas.render("#{id}"); -->
+<div data-mad-auto-refresh-in-seconds="20" data-mad-auto-refresh-limit="999" data-mad-lazyload-offset="100" data-mad-smartad-id="31715" data-mad="" id="sas_31715"></div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="ads-box ads-full">
+<!-- :javascript -->
+<!-- sas.render("#{id}"); -->
+<div data-mad-auto-refresh-in-seconds="20" data-mad-auto-refresh-limit="999" data-mad-lazyload-offset="100" data-mad-smartad-id="34234" data-mad="" id="sas_34234"></div>
+
+</div>
+<h2 class="latest-articles-title section-title">
+<span class="ico blog"></span>
+Últimas matérias do Blog
+</h2>
+<div class="latest-articles">
+<div class="main-content">
+<div class="box-article">
+<a href="http://blog.tudogostoso.com.br/galeria/festa-julina-bebidas-tipicas-para-voce-fazer/" title="Festa Julina: bebidas típicas para você fazer"><img alt="Festa Julina: bebidas típicas para você fazer" class="article-img" src="http://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_143198257.jpg?mode=crop&amp;w=340&amp;h=185" />
+<div class="div">
+<span class="date">
+11/07/17
+</span>
+<h2>
+Festa Julina: bebidas típicas para você fazer
+</h2>
+</div>
+</a></div>
+<div class="box-article">
+<a href="http://blog.tudogostoso.com.br/cardapios/alimentos-para-fortalecer-o-cabelo/" title="Alimentos para fortalecer o cabelo"><img alt="Alimentos para fortalecer o cabelo" class="article-img" src="http://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_584606101.jpg?mode=crop&amp;w=340&amp;h=185" />
+<div class="div">
+<span class="date">
+11/07/17
+</span>
+<h2>
+Alimentos para fortalecer o cabelo
+</h2>
+</div>
+</a></div>
+<div class="box-article">
+<a href="http://blog.tudogostoso.com.br/noticias/leite-evaporado-aprenda-prepara-lo-em-casa-de-maneira-facil/" title="Leite evaporado: aprenda a prepará-lo em casa de maneira fácil!"><img alt="Leite evaporado: aprenda a prepará-lo em casa de maneira fácil!" class="article-img" src="http://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_279701309.jpg?mode=crop&amp;w=340&amp;h=185" />
+<div class="div">
+<span class="date">
+11/07/17
+</span>
+<h2>
+Leite evaporado: aprenda a prepará-lo em casa de maneira fácil!
+</h2>
+</div>
+</a></div>
+<div class="box-article">
+<a href="http://blog.tudogostoso.com.br/estilo-de-vida/bem-estar/calmantes-naturais-alimentos-que-proporcionam-tranquilidade-e-bem-estar/" title="Calmantes naturais: alimentos que proporcionam tranquilidade e bem-estar"><img alt="Calmantes naturais: alimentos que proporcionam tranquilidade e bem-estar" class="article-img" src="http://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_425296603.jpg?mode=crop&amp;w=340&amp;h=185" />
+<div class="div">
+<span class="date">
+11/07/17
+</span>
+<h2>
+Calmantes naturais: alimentos que proporcionam tranquilidade e bem-estar
+</h2>
+</div>
+</a></div>
+<div class="box-article">
+<a href="http://blog.tudogostoso.com.br/dicas-de-cozinha/alimentos-para-serem-usados-como-cosmeticos/" title="Maquiagem natural: alimentos usados como cosméticos"><img alt="Maquiagem natural: alimentos usados como cosméticos" class="article-img" src="http://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_434955340.jpg?mode=crop&amp;w=340&amp;h=185" />
+<div class="div">
+<span class="date">
+10/07/17
+</span>
+<h2>
+Maquiagem natural: alimentos usados como cosméticos
+</h2>
+</div>
+</a></div>
+<div class="box-article">
+<a href="http://blog.tudogostoso.com.br/cardapios/menu-especial/como-preparar-kefir-caseiro-em-poucos-passos/" title="Como preparar kefir caseiro em poucos passos"><img alt="Como preparar kefir caseiro em poucos passos" class="article-img" src="http://img.itdg.com.br/tdg/images/blog/uploads/2017/07/shutterstock_397784773.jpg?mode=crop&amp;w=340&amp;h=185" />
+<div class="div">
+<span class="date">
+10/07/17
+</span>
+<h2>
+Como preparar kefir caseiro em poucos passos
+</h2>
+</div>
+</a></div>
+
+<div class="see-more title-with-line">
+<span>
+<a href="http://blog.tudogostoso.com.br" class="btn btn-gray">Veja mais
+</a></span>
+</div>
+</div>
+</div>
+<h2 class="most-viewed-title section-title">
+Mais vistas da semana
+</h2>
+<div class="most-viewed">
+<div class="main-content">
+<div class="left-content">
+<div class="box box-hover box-small">
+<a href="/receita/23-bolo-de-cenoura.html" title="Bolo de cenoura"><img alt="Bolo de cenoura" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/000/023/38681/38681_original.jpg?mode=crop&amp;width=150&amp;height=150" />
+<span class="number">
+1
+</span>
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Bolos e tortas doces
+</span>
+</h4>
+<h3 title="Bolo de cenoura">
+Bolo de cenoura
+</h3>
+<span class="by-user">
+Por
+<span>
+Tudo Gostoso
+</span>
+</span>
+<span class="like">
+<img alt="Quantidade Favoritos" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+426.991
+</span>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+40 MIN
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+8 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</div>
+</a></div>
+<div class="box box-hover box-small">
+<a href="/receita/62547-a-melhor-receita-de-bolo-de-chocolate.html" title="A melhor receita de bolo de chocolate"><img alt="A melhor receita de bolo de chocolate" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/062/547/256502/256502_original.jpg?mode=crop&amp;width=150&amp;height=150" />
+<span class="number">
+2
+</span>
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Bolos e tortas doces
+</span>
+</h4>
+<h3 title="A melhor receita de bolo de chocolate">
+A melhor receita de bolo de chocolate
+</h3>
+<span class="by-user">
+Por
+<span>
+Sandro Valério
+</span>
+</span>
+<span class="like">
+<img alt="Quantidade Favoritos" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+281.605
+</span>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+40 MIN
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+10 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</div>
+</a></div>
+<div class="box box-hover box-small">
+<a href="/receita/31593-pudim-de-leite-condensado.html" title="Pudim de leite condensado"><img alt="Pudim de leite condensado" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/031/593/85534/85534_original.jpg?mode=crop&amp;width=150&amp;height=150" />
+<span class="number">
+3
+</span>
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Doces e sobremesas
+</span>
+</h4>
+<h3 title="Pudim de leite condensado">
+Pudim de leite condensado
+</h3>
+<span class="by-user">
+Por
+<span>
+Lívia Loiola
+</span>
+</span>
+<span class="like">
+<img alt="Quantidade Favoritos" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+66.859
+</span>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+60 MIN
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+8 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</div>
+</a></div>
+<div class="box box-hover box-small">
+<a href="/receita/29124-bolo-simples.html" title="Bolo simples"><img alt="Bolo simples" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/029/124/43682/43682_original.jpg?mode=crop&amp;width=150&amp;height=150" />
+<span class="number">
+4
+</span>
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Bolos e tortas doces
+</span>
+</h4>
+<h3 title="Bolo simples">
+Bolo simples
+</h3>
+<span class="by-user">
+Por
+<span>
+Maria F.  N. Vechi
+</span>
+</span>
+<span class="like">
+<img alt="Quantidade Favoritos" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+159.472
+</span>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+40 MIN
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+12 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</div>
+</a></div>
+<div class="box box-hover box-small">
+<a href="/receita/130871-chocolate-quente-cremoso.html" title="Chocolate quente cremoso"><img alt="Chocolate quente cremoso" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/130/871/61385/61385_original.jpg?mode=crop&amp;width=150&amp;height=150" />
+<span class="number">
+5
+</span>
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Bebidas
+</span>
+</h4>
+<h3 title="Chocolate quente cremoso">
+Chocolate quente cremoso
+</h3>
+<span class="by-user">
+Por
+<span>
+Fernanda
+</span>
+</span>
+<span class="like">
+<img alt="Quantidade Favoritos" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+218.196
+</span>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+10 MIN
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+4 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</div>
+</a></div>
+<div class="box box-hover box-small">
+<a href="/receita/82681-massa-de-panqueca.html" title="Massa de panqueca"><img alt="Massa de panqueca" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/082/681/22786/22786_original.jpg?mode=crop&amp;width=150&amp;height=150" />
+<span class="number">
+6
+</span>
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Massas
+</span>
+</h4>
+<h3 title="Massa de panqueca">
+Massa de panqueca
+</h3>
+<span class="by-user">
+Por
+<span>
+Tereza Cristina da Si...
+</span>
+</span>
+<span class="like">
+<img alt="Quantidade Favoritos" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+84.699
+</span>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+30 MIN
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+15 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</div>
+</a></div>
+
+<div class="see-more title-with-line">
+<span>
+<a href="/receitas-populares/" class="btn btn-gray">Veja mais
+</a></span>
+</div>
+</div>
+<div class="right-content">
+<div class="ads-box ads300x250">
+<!-- :javascript -->
+<!-- sas.render("#{id}"); -->
+<div data-mad-auto-refresh-in-seconds="20" data-mad-auto-refresh-limit="999" data-mad-lazyload-offset="100" data-mad-smartad-id="20056" data-mad="" id="sas_20056"></div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="full-width-content latest-articles">
+<div class="main-content" id="taboola-home-page-thumbnails"></div>
+<script type="text/javascript">
+  //<![CDATA[
+    window._taboola = window._taboola || [];
+    _taboola.push({
+    mode: 'thumbnails-b',
+    container: 'taboola-home-page-thumbnails',
+    placement: 'Home Page Thumbnails',
+    target_type: 'mix'
+    });
+  //]]>
+</script>
+</div>
+
+<div class="also-check full-width-content">
+<div class="main-content">
+<div class="left-content outline-border">
+<h3 class="box-upper-tittle also-check-title">
+Confira Também
+</h3>
+<div class="box box-hover box-small">
+<a href="/receita/9473-queijadinha.html"><img alt="Queijadinha" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/009/473/38936/38936_original.jpg?mode=crop&amp;width=150&amp;height=130" />
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Doces e sobremesas
+</span>
+</h4>
+<h3>
+Queijadinha
+</h3>
+<span class="by-user">
+<span class="by">
+Por
+</span>
+<span>
+claudio de castro
+</span>
+</span>
+<span class="like">
+<img alt="Blank" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+10.305
+</span>
+</div>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+30 MIN
+min
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+15 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</a></div>
+<div class="box box-hover box-small">
+<a href="/receita/2249-risoto-de-camarao-a-minha-moda.html"><img alt="Risoto de camarão à minha moda" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/002/249/39238/39238_original.jpg?mode=crop&amp;width=150&amp;height=130" />
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Peixes e frutos do mar
+</span>
+</h4>
+<h3>
+Risoto de camarão à minha moda
+</h3>
+<span class="by-user">
+<span class="by">
+Por
+</span>
+<span>
+Tudo Gostoso
+</span>
+</span>
+<span class="like">
+<img alt="Blank" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+7.225
+</span>
+</div>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+60 MIN
+min
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+5 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</a></div>
+<div class="box box-hover box-small">
+<a href="/receita/690-quentao.html"><img alt="Quentão" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/000/690/100761/100761_original.jpg?mode=crop&amp;width=150&amp;height=130" />
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Bebidas
+</span>
+</h4>
+<h3>
+Quentão
+</h3>
+<span class="by-user">
+<span class="by">
+Por
+</span>
+<span>
+Danielli da Silva ...
+</span>
+</span>
+<span class="like">
+<img alt="Blank" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+16.219
+</span>
+</div>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+40 MIN
+min
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+8 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</a></div>
+<div class="box box-hover box-small">
+<a href="/receita/760-panqueca-de-carne-moida.html"><img alt="Panqueca de carne moída" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/000/760/38777/38777_original.jpg?mode=crop&amp;width=150&amp;height=130" />
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Prato Único
+</span>
+</h4>
+<h3>
+Panqueca de carne moída
+</h3>
+<span class="by-user">
+<span class="by">
+Por
+</span>
+<span>
+Daniel Soberas
+</span>
+</span>
+<span class="like">
+<img alt="Blank" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+209.000
+</span>
+</div>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+40 MIN
+min
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+10 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</a></div>
+<div class="box box-hover box-small">
+<a href="/receita/9861-pe-de-moleque-de-leite-condensado.html"><img alt="Pé de moleque de leite condensado" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/009/861/275099/275099_original.jpg?mode=crop&amp;width=150&amp;height=130" />
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Doces e sobremesas
+</span>
+</h4>
+<h3>
+Pé de moleque de leite condensado
+</h3>
+<span class="by-user">
+<span class="by">
+Por
+</span>
+<span>
+ELIANA SÔNEGO MORE...
+</span>
+</span>
+<span class="like">
+<img alt="Blank" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+22.650
+</span>
+</div>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+25 MIN
+min
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+30 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</a></div>
+<div class="box box-hover box-small">
+<a href="/receita/33471-sopa-de-queijo.html"><img alt="Sopa de queijo" class="recipe-img" src="http://img.itdg.com.br/tdg/images/recipes/000/033/471/185590/185590_original.jpg?mode=crop&amp;width=150&amp;height=130" />
+<div class="recipe-box">
+<div class="container">
+<h4 class="title-with-line">
+<span>
+Sopas
+</span>
+</h4>
+<h3>
+Sopa de queijo
+</h3>
+<span class="by-user">
+<span class="by">
+Por
+</span>
+<span>
+Stefânia Regina Ca...
+</span>
+</span>
+<span class="like">
+<img alt="Blank" class="ico heart-small" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+401
+</span>
+</div>
+<div class="recipe-box-hover">
+<div class="container">
+<span class="time recipe-info">
+<img alt="Blank" class="ico time" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+15 MIN
+min
+</span>
+<span class="portion recipe-info">
+<img alt="Blank" class="ico portion" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+5 PORÇÕES
+</span>
+</div>
+<span class="btn">
+Ver Receita
+</span>
+</div>
+</div>
+</a></div>
+
+</div>
+<div class="right-content outline-border">
+<h3 class="box-upper-tittle">
+Usuário da semana
+</h3>
+<span class="box-upper-date">
+03/07 até 09/07
+</span>
+<div class="user-info">
+<div class="user-position">
+<img alt="Troféu" class="ico position-img trophy-gold " src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+<span>
+1
+</span>
+</div>
+<a href="http://www.tudogostoso.com.br/usuario/7650332-liks/" class="user-recipes-count" title="Liks"><img alt="Liks" class="user-img" src="http://img.itdg.com.br/tdg/assets/default/users_avatars/user_avatar_original.png?mode=crop&amp;width=72&amp;height=72" />
+<span>
+<span class="user-name">
+Liks
+</span>
+<span class="user-signup-date">
+Usuário desde: 2017
+</span>
+3 Receitas enviadas
+</span>
+</a></div>
+<div class="user-info">
+<div class="user-position">
+<img alt="Troféu" class="ico position-img trophy-silver " src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+<span>
+2
+</span>
+</div>
+<a href="http://www.tudogostoso.com.br/usuario/3187501-iara-magalhaes/" class="user-recipes-count" title="Iara Magalhães"><img alt="Iara Magalhães" class="user-img" src="http://img.itdg.com.br/tdg/images/users_avatars/003/187/501/249619/249619_original.jpg?mode=crop&amp;width=72&amp;height=72" />
+<span>
+<span class="user-name">
+Iara Magalhães
+</span>
+<span class="user-signup-date">
+Usuário desde: 2014
+</span>
+2 Receitas enviadas
+</span>
+</a></div>
+<div class="user-info">
+<div class="user-position">
+<img alt="Troféu" class="ico position-img trophy-bronze " src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+<span>
+3
+</span>
+</div>
+<a href="http://www.tudogostoso.com.br/usuario/7076617-iran-carlos-stalliviere-correa/" class="user-recipes-count" title="Iran Carlos Stalliviere Correa"><img alt="Iran Carlos Stalliviere Correa" class="user-img" src="http://img.itdg.com.br/tdg/images/users_avatars/007/076/617/247664/247664_original.jpg?mode=crop&amp;width=72&amp;height=72" />
+<span>
+<span class="user-name">
+Iran Carlos Stalliviere Correa
+</span>
+<span class="user-signup-date">
+Usuário desde: 2016
+</span>
+2 Receitas enviadas
+</span>
+</a></div>
+<div class="user-info">
+<div class="user-position">
+<img alt="Troféu" class="ico position-img  trophy" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+<span>
+4
+</span>
+</div>
+<a href="http://www.tudogostoso.com.br/usuario/726756-lucio-cezar/" class="user-recipes-count" title="Lúcio Cezar."><img alt="Lúcio Cezar." class="user-img" src="http://img.itdg.com.br/tdg/images/users_avatars/000/726/756/240489/240489_original.jpg?mode=crop&amp;width=72&amp;height=72" />
+<span>
+<span class="user-name">
+Lúcio Cezar.
+</span>
+<span class="user-signup-date">
+Usuário desde: 2010
+</span>
+2 Receitas enviadas
+</span>
+</a></div>
+<div class="user-info">
+<div class="user-position">
+<img alt="Troféu" class="ico position-img  trophy" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+<span>
+5
+</span>
+</div>
+<a href="http://www.tudogostoso.com.br/usuario/2177777-rodrigo-quintela/" class="user-recipes-count" title="Rodrigo Quintela"><img alt="Rodrigo Quintela" class="user-img" src="http://img.itdg.com.br/tdg/assets/default/users_avatars/user_avatar_original.png?mode=crop&amp;width=72&amp;height=72" />
+<span>
+<span class="user-name">
+Rodrigo Quintela
+</span>
+<span class="user-signup-date">
+Usuário desde: 2013
+</span>
+2 Receitas enviadas
+</span>
+</a></div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="full-width-content ads-suoer-footer">
+<div class="pub ads-center">
+<!-- :javascript -->
+<!-- sas.render("#{id}"); -->
+<div data-mad-auto-refresh-in-seconds="20" data-mad-auto-refresh-limit="999" data-mad-lazyload-offset="100" data-mad-smartad-id="30352" data-mad="" id="sas_30352"></div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="footer">
+<div class="footer-content">
+<div class="footer-box1">
+<ul>
+<li class="title">Receitas</li>
+<li>
+<a href="/rapidas.php" title="Rápidas">Rápidas</a>
+</li>
+<li>
+<a href="/especiais" title="Especiais">Especiais</a>
+</li>
+<li>
+<a href="/microondas.php" title="Micro-ondas">Micro-ondas</a>
+</li>
+<li>
+<a href="/videos.php" title="Vídeos">Vídeos</a>
+</li>
+<li>
+<a href="/novidades.php" title="Novidades">Novidades</a>
+</li>
+</ul>
+</div>
+<div class="footer-box1 mobile-app">
+<ul>
+<li class="title">Tudogostoso no celular</li>
+<li>
+<a href="https://play.google.com/store/apps/details?id=com.nzn.tdg&amp;hl=pt_BR" target="_blank" title="Android">
+<img class="m-ico ico android" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+</a>
+</li>
+<li>
+<a href="https://itunes.apple.com/br/app/tudo-gostoso-receitas/id577891381?mt=8" target="_blank" title="Appstore">
+<img class="m-ico ico appstore" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+</a>
+</li>
+<li>
+<a href="https://www.microsoft.com/pt-br/store/p/tudo-gostoso-receitas/9nblgggz5qg5" target="_blank" title="Windows Store">
+<img class="m-ico ico windows" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+</a>
+</li>
+</ul>
+</div>
+<div class="footer-box2">
+<ul>
+<li class="title">Sobre</li>
+<li>
+<a href="/privacidade" title="Termos de uso e Política de privacidade">Termos de uso e<br> Política de privacidade</a>
+</li>
+<li>
+<a href="/anuncie" title="Anuncie">Anuncie</a>
+</li>
+<li>
+<a href="/contato.php" title="Contato">Contato</a>
+</li>
+</ul>
+</div>
+<div class="footer-box3 hide">
+<span class="title">Cadastre-se e <br>receba novidades</span>
+<form class="newsletter" method="POST">
+<div class="nl-input nl-name">
+<input class="name" name="name" placeholder="Nome" type="text" />
+</div>
+<div class="nl-input nl-mail">
+<input class="email" name="email" placeholder="E-mail" type="text" />
+</div>
+<input class="nl-send" name="nl-send" type="button" value="Cadastrar" />
+</form>
+<div class="nl-msg">
+<span class="nl-confirm">
+<img class="ico mail-ok" src="http://img.itdg.com.br/tdg/assets/layout/blank.gif" />
+E-mail cadastrado <br> com sucesso!
+</span>
+<span class="loading load-white">
+Cadastrando...
+</span>
+</div>
+</div>
+<div class="footer-box4">
+<img alt="Mascote Tudogostoso" src="http://img.itdg.com.br/tdg/assets/renew/layout/footer-bg.jpg" />
+</div>
+<div class="social-box-mini">
+<ul>
+<li>
+<a class="footer-fb ico facebook" href="https://www.facebook.com/tudogostoso/" target="_blank">Facebook</a>
+</li>
+<li>
+<a class="footer-print ico pinterest" href="https://br.pinterest.com/tudogostoso/" target="_blank">Pinterest</a>
+</li>
+<li>
+<a class="footer-insta ico instagran" href="https://www.instagram.com/tudogostosooficial" target="_blank">Instagran</a>
+</li>
+<li>
+<a class="footer-twt ico twitter" href="https://twitter.com/tudo_gostoso" target="_blank">Twitter</a>
+</li>
+<li>
+<a class="footer-yt ico youtube" href="http://www.youtube.com/user/tudogostoso" target="_blank">YouTube</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="webedia-brands">
+<a class="brand-logo webedia-logo" href="http://www.webedia.com.br" target="_blank">
+<img alt="Logo Webedia Food With Passion" src="http://img.itdg.com.br/tdg/assets/desktop/layout/webedia-brands/webedia-logo-food.png" />
+</a>
+<a class="brand-logo" href="http://www.adorocinema.com/" target="_blank">
+<img alt="Filmes, trailers, horários e salas de cinema, Notícias, criticas - AdoroCinema" src="http://img.itdg.com.br/tdg/assets/desktop/layout/webedia-brands/adorocinema.png" />
+</a>
+<a class="brand-logo" href="http://br.ign.com/" target="_blank">
+<img alt="IGN Brasil" src="http://img.itdg.com.br/tdg/assets/desktop/layout/webedia-brands/ign.png" />
+</a>
+<a class="brand-logo" href="http://www.purepeople.com.br/" target="_blank">
+<img alt="Purebreak - as notícias que bombam na Internet!" src="http://img.itdg.com.br/tdg/assets/desktop/layout/webedia-brands/purepeople.png" />
+</a>
+<a class="brand-logo" href="http://www.purebreak.com.br/" target="_blank">
+<img alt="Famosos – notícias e fotos das celebridades – Purepeople.com.br" src="http://img.itdg.com.br/tdg/assets/desktop/layout/webedia-brands/purebreak.png" />
+</a>
+</div>
+
+<p class="copy">
+&copy; Copyright 2005-2017 Tudogostoso Internet Ltda, todos os direitos reservados. Proibida a reprodu&ccedil;&atilde;o sem autoriza&ccedil;&atilde;o.
+</p>
+</div>
+
+<script src="https://seguro.tudogostoso.com.br/assets/desktop/application-972455c99e8edbb8421517ffa2acb104.js" type="text/javascript"></script>
+<script defer="defer" src="https://seguro.tudogostoso.com.br/assets/molotov-ads-92e3d80a076e66a56838e8ec4e1e7b55.js" type="text/javascript"></script>
+<script defer="defer" src="https://seguro.tudogostoso.com.br/assets/prebid-smartadserver-9756dfdf94db816871da3126b1013722.js" type="text/javascript"></script>
+<script type="text/javascript">
+  //<![CDATA[
+    var PREBID_TIMEOUT = 14000; //define your timeout
+    var ads = document.querySelectorAll("[id^=sas_]");
+    var adsFormats = [];
+    
+    var editorialsFormats = ["31715", "34492", "32319", "39486"];
+    var lazyLoadBlacklist = ["23428", "20009", "20055", "32634", "36329", "42416", "44766", "44767"].concat(editorialsFormats);
+    var autoRefreshBlacklist = ["23428", "32634", "36329", "42416", "44766", "44767"].concat(editorialsFormats);
+    
+    // add madOptions attribute to elements located in elsewhere
+    for (var i=0, t = ads.length; i < t; i++) {
+    
+      var adID = ads[i].id.replace(/[^\d]/g,"");
+      adsFormats.push(adID);
+    
+      ads[i].setAttribute("data-mad", "");
+      ads[i].setAttribute("data-mad-smartad-id", adID);
+      ads[i].setAttribute("data-mad-auto-refresh-limit", "999");
+    
+      if (lazyLoadBlacklist.indexOf(adID) == -1) {
+        ads[i].setAttribute("data-mad-lazyload-offset", 300);
+      }
+    
+      if (autoRefreshBlacklist.indexOf(adID) == -1) {
+        ads[i].setAttribute("data-mad-auto-refresh-in-seconds", 20);
+      }
+    }
+    
+    var adUnits = headerBidding(adsFormats);
+    
+    var madOptions = {
+        PrebidSmart: {
+          siteId: 79174,
+          pageId: "578000",
+          formatId: "20009,23428,46253,46254,42416,44766,20055,31715,34234,20056,30352,23428,20009",
+          target: target,
+          PREBID_TIMEOUT: PREBID_TIMEOUT,
+          sendAllBids: true,
+          logBids: true,
+          adUnits: adUnits
+      }
+    };
+    
+    function headerBidding(adsFormats) {
+      return headerBiddingAdUnits().filter(function(item){
+        return adsFormats.indexOf(item.code) !== -1
+      });
+    }
+    
+    // Units for Desktop
+    function headerBiddingAdUnits() {
+    
+      var units = []
+    
+      // Arroba (300x250) 1 - ATF
+      units.push({
+        code: "20055",
+        sizes: [[300, 250]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756256"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329770",
+            sizes: [15],
+            position: "ATF",
+            inventory: {
+              adunit: "sas_20055",
+              position: "ATF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787217"
+            }
+          }]
+      });
+    
+      // Arroba (300x250) 2 - MTF
+      units.push({
+        code: "20056",
+        sizes: [[300, 250]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756257"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329772",
+            sizes: [15],
+            position: "MTF",
+            inventory: {
+              adunit: "sas_20056",
+              position: "MTF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787223"
+            }
+          }]
+      });
+    
+      // Arroba (300x250) 3 - BTF
+      units.push({
+        code: "30351",
+        sizes: [[300, 250]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756258"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329774",
+            sizes: [15],
+            position: "BTF",
+            inventory: {
+              adunit: "sas_30351",
+              position: "BTF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787226"
+            }
+          }]
+      });
+    
+      // Arroba(300x250) 4 - BTF
+      units.push({
+        code: "34242",
+        sizes: [[300,250]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "6354192"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329776",
+            sizes: [15],
+            position: "BTF",
+            inventory: {
+              adunit: "sas_34242",
+              position: "BTF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787232"
+            }
+          }]
+      });
+    
+      // Halfpage (300x600) 1 - ATF
+      units.push({
+        code: "20055",
+        sizes: [[300, 600]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756256"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329770",
+            sizes: [10],
+            position: "ATF",
+            inventory: {
+              adunit: "sas_20055",
+              position: "ATF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787218"
+            }
+          }]
+      });
+    
+      // Halfpage (300x600) 2 - MTF
+      units.push({
+        code: "20056",
+        sizes: [[300, 600]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756257"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329772",
+            sizes: [10],
+            position: "MTF",
+            inventory: {
+              adunit: "sas_20056",
+              position: "MTF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787227"
+            }
+          }]
+      });
+    
+      // Halfpage (300x600) 3 - BTF
+      units.push({
+        code: "30351",
+        sizes: [[300, 600]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756258"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329774",
+            sizes: [10],
+            position: "BTF",
+            inventory: {
+              adunit: "sas_30351",
+              position: "BTF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787376"
+            }
+          }]
+      });
+    
+      // Superbanner (728x90) - ATF
+      units.push({
+        code: "20009",
+        sizes: [[728, 90]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756253"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329764",
+            sizes: [2],
+            position: "ATF",
+            inventory: {
+              adunit: "sas_20009",
+              position: "ATF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787219"
+            }
+          }]
+      });
+    
+      // Footer (728x90) - BTF
+      units.push({
+        code: "30352",
+        sizes: [[728, 90]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756255"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329768",
+            sizes: [2],
+            position: "BTF",
+            inventory: {
+              adunit: "sas_30352",
+              position: "BTF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787228"
+            }
+          }]
+      });
+    
+      // Billboard (970x250) - ATF
+      units.push({
+        code: "20009",
+        sizes: [[970, 250]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756253"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329764",
+            sizes: [57],
+            position: "ATF",
+            inventory: {
+              adunit: "sas_20009",
+              position: "ATF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787221"
+            }
+          }]
+      });
+    
+      // Footer (970x250) - BTF
+      units.push({
+        code: "30352",
+        sizes: [[970, 250]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756255"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329768",
+            sizes: [57],
+            position: "BTF",
+            inventory: {
+              adunit: "sas_30352",
+              position: "BTF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787230"
+            }
+          }]
+      });
+    
+      // Widesky (120x600) 1 - ATF
+      units.push({
+        code: "34236",
+        sizes: [[120, 600]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756259"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329778",
+            sizes: [8],
+            position: "ATF",
+            inventory: {
+              adunit: "sas_34236",
+              position: "ATF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787215"
+            }
+          }]
+      });
+    
+      // Widesky (120x600) 2 - MTF
+      units.push({
+        code: "34238",
+        sizes: [[120, 600]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756260"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329780",
+            sizes: [8],
+            position: "MTF",
+            inventory: {
+              adunit: "sas_34238",
+              position: "MTF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787224"
+            }
+          }]
+      });
+    
+      // Widesky (120x600) 3 - BTF
+      units.push({
+        code: "34239",
+        sizes: [[120, 600]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756261"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329782",
+            sizes: [8],
+            position: "BTF",
+            inventory: {
+              adunit: "sas_34239",
+              position: "BTF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787233"
+            }
+          }]
+      });
+    
+      // Widesky (160x600) 1 - ATF
+      units.push({
+        code: "34236",
+        sizes: [[160, 600]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756259"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329778",
+            sizes: [9],
+            position: "ATF",
+            inventory: {
+              adunit: "sas_34236",
+              position: "ATF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787216"
+            }
+          }]
+      });
+    
+      // Widesky (160x600) 2 - MTF
+      units.push({
+        code: "34238",
+        sizes: [[160, 600]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756260"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329780",
+            sizes: [9],
+            position: "MTF",
+            inventory: {
+              adunit: "sas_34238",
+              position: "MTF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787225"
+            }
+          }]
+      });
+    
+      // Widesky (160x600) 3 - BTF
+      units.push({
+        code: "34239",
+        sizes: [[160, 600]],
+        bids: [{
+          bidder: "appnexus",
+          params: {
+            placementId: "5756261"
+          }
+        },{
+          bidder: "rubicon",
+          params: {
+            accountId: "13624",
+            siteId: "69052",
+            zoneId: "329782",
+            sizes: [9],
+            position: "BTF",
+            inventory: {
+              adunit: "sas_34239",
+              position: "BTF"
+            },
+            visitor: profileTailTarget
+          }
+        },{
+            bidder: "criteo",
+            params: {
+              zoneId: "787234"
+            }
+          }]
+      });
+    
+      return units;
+    }
+  //]]>
+</script>
+
+
+<div id="fb-root"></div>
+
+<script src="http://www.youtube.com/player_api"></script>
+<script type="text/javascript">
+  //<![CDATA[
+    TudoGostoso.Renew.Home.init()
+    TudoGostoso.Tools.boxHover(".box-hover", ".recipe-box-hover")
+  //]]>
+</script>
+<script type="text/javascript">
+  //<![CDATA[
+    TudoGostoso.HighlightsYoutubePlayer.init("TmMAeZo76cA", 705, 400)
+  //]]>
+</script>
+
+<script type="text/javascript">
+  //<![CDATA[
+    window._taboola = window._taboola || [];
+    _taboola.push({flush: true});
+  //]]>
+</script>
+
+<!-- AudienceScience Async Data Collection Tag --> 
+<script>
+(function() {
+ var csid = "F09828";
+ var bpid = "gruponzn";
+ var e = document.createElement("script");
+ var s = document.getElementsByTagName("script")[0];
+ e.src = "//js.revsci.net/gateway/gw.js?auto=t&csid=" + csid + "&bpid=" + bpid;
+ e.async = true;
+ s.parentNode.insertBefore(e, s);
+})();
+</script>
+
+<!-- End AudienceScience Data Collection Tag -->
+
+<!-- Begin comScore Tag -->
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "6035191" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=6035191&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+<!-- Datadome -->
+<!-- <script>var ddjskey = "C499C5254821BA7F386B459241B3FC";</script> -->
+<!-- <script type="text/javascript" src="https://js.datadome.co/tags.js"></script> -->
+
+<script>
+!function(a,b,c,d,e){a.ddjskey=e;var f=b.createElement(c),g=b.getElementsByTagName(c)[0];
+f.async=1,f.src=d,g.parentNode.insertBefore(f,g)}
+(window,document,"script","https://js.datadome.co/tags.js","C499C5254821BA7F386B459241B3FC");
+</script>
+<!-- End Datadome -->
+
+
+<script type="text/javascript" src="//cdn.tradelab.fr/tag/44726f860c.js"></script>
+
+</body>
+</html>
