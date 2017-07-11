@@ -3,8 +3,15 @@ require 'json'
 require 'nokogiri'
 require 'open-uri'
 require 'sinatra'
+require 'sinatra/cross_origin'
 
 require_relative 'config/redis'
+
+register Sinatra::CrossOrigin
+
+configure do
+  enable :cross_origin
+end
 
 before do
   puts '[Params]'
