@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<form method="post">
+
+<input type="hidden" name="origin_url" value="<%=@origin_url%>" />
+
+<% @metas.each do |meta| %>
+<% meta.each do |key, value| %>
+
+<div>
+	<label for="<%=key%>"><%=key%></label>
+	<input type="text" id="<%=key%>" name="metas[<%=key%>]" value="<%=value%>" />
+</div>
+
+<% end %>
+<% end %>
+
+<input type="submit">
+</form>
+
+</body>
+</html>
